@@ -6,12 +6,20 @@ export function displayarray(arraylist) {
 
   for (let i = 0; i < arraylist.length; i++) {
     let newgridelement = document.createElement("div");
-    newgridelement.setAttribute("class", "gridelement");
+    let height = 0;
+    if (arraylist.length == 100) {
+      newgridelement.setAttribute("class", "gridelement100");
+      height = arraylist[i];
+    } else {
+      newgridelement.setAttribute("class", "gridelement");
+      height = arraylist[i] * 10;
+      newgridelement.innerText = arraylist[i];
+    }
+
     newgridelement.setAttribute("id", i);
-    let height = arraylist[i] * 10;
+
     height = height.toString() + "%";
     newgridelement.style.height = height;
-    newgridelement.innerText = arraylist[i];
     griddiv.appendChild(newgridelement);
   }
 
