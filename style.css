@@ -1,0 +1,56 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  color: whitesmoke;
+  margin: 0;
+}
+header {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(76, 97, 136);
+  text-align: center;
+}
+main {
+  width: 100%;
+  height: 80%;
+  margin-top: 20px;
+}
+#griddiv {
+  margin: 0 auto;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /*display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);*/
+}
+.gridelement {
+  text-align: center;
+  border: 1px solid black;
+  width: 10%;
+  margin: 0;
+  background-color: aqua;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+.finished {
+  background-color: blueviolet !important;
+}
+.current {
+  background-color: green !important;
+}
+#controls {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 10px;
+}
